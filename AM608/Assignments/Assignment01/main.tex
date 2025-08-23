@@ -1,0 +1,98 @@
+% AM608 - Assignment 1 - Minimal template
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tcolorbox} % boxed final answers
+\geometry{margin=1in}
+
+% Theorem / proof
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+
+% Custom boxed answer
+\newtcolorbox{finalanswer}{colback=white,colframe=black,boxrule=0.6pt,arc=2pt,left=4pt,right=4pt,top=4pt,bottom=4pt}
+
+% Document starts
+\begin{document}
+
+% ===== Title / cover page =====
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+  {\Large \textbf{Defence Institute of Advanced Technology (DU)}\\
+  Department of Applied Mathematics \\[1.2em]
+  \textbf{AM608: Data Structures and Algorithms}\\[2em]}
+  {\huge \textbf{Assignment -- 1} \\[2em]}
+  \textbf{Name:} Saurabh Kumar Singh \\
+  \textbf{Registration No.:} 25 - 27 - 05 \\
+  \textbf{Department:} Applied Mathematics \\
+  \textbf{Course Code:} AM608 \\
+  \textbf{Submission Date:} 25 Aug 2025 \\[3em]
+  \vfill
+  Compiled with TeX Live --- Overleaf  \\
+  %\today
+\end{titlepage}
+
+% ===== Example: Question 1 =====
+\section*{Question 1}
+\textbf{Q1.} Find the value of $c$ and $n_0$ such that $f(n)=\sqrt{n}$ is $\Omega(\log n)$. \\
+
+\textbf{Solution.} We need to show $\exists c>0, n_0$ such that for all $n\ge n_0$,
+\[
+\sqrt{n} \ge c \log n.
+\]
+Consider the function $h(n)=\frac{\sqrt{n}}{\log n}$ for $n>1$. As $n\to\infty$, $h(n)\to\infty$, so there exists $n_0$ such that $h(n)\ge c$ for any fixed $c$ (choose e.g.\ $c=1$). Hence take $c=1$ and pick $n_0$ sufficiently large (e.g.\ $n_0=16$ works since $\sqrt{16}=4$ and $\log 16 \approx 2.77$). Thus $\sqrt{n} = \Omega(\log n)$.
+
+\begin{finalanswer}
+Final choice: $c=1$ and $n_0=16$ (one convenient choice). Hence $\sqrt{n} \ge \log n$ for all $n\ge 16$.
+\end{finalanswer}
+
+
+% ===== Another example: using a proof environment =====
+\section*{Question 2}
+\textbf{Q2.} Show constants $c_1,c_2,n_0$ such that $f(n)=10n^2-3n$ is $\Theta(n^2)$. \\
+
+\textbf{Solution.}
+\begin{proof}
+For $n\ge 1$ we have
+\[
+10n^2 - 3n \le 10n^2,
+\]
+and for $n\ge 1$,
+\[
+10n^2 - 3n \ge 10n^2 - 3n^2 = 7n^2.
+\]
+So take $c_1 = 7$, $c_2 = 10$, and $n_0=1$. Thus $7 n^2 \le 10n^2 - 3n \le 10 n^2$ for all $n\ge 1$.
+\end{proof}
+
+\begin{finalanswer}
+$c_1=7,\ c_2=10,\ n_0=1$, so $10n^2-3n = \Theta(n^2)$.
+\end{finalanswer}
+
+
+% ===== Textbook exercises section =====
+\section*{Exercises from the Book}
+\noindent\textbf{Q8.} (R-3.2, R-3.3, R-3.6 -- R-3.21). \\
+Write each exercise heading and your solution. For long exercise lists, use \texttt{enumerate}:
+\begin{enumerate}[leftmargin=*]
+  \item R-3.2. \\
+    \textit{(statement)} \\
+    \textbf{Solution:} ...
+  \item R-3.3. \\
+    \textbf{Solution:} ...
+\end{enumerate}
+
+% ===== Appendix if needed =====
+\appendix
+\section{Extra derivations}
+Here you can put extended algebra or scanned figures.
+
+\end{document}
