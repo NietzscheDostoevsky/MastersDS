@@ -47,7 +47,7 @@
 
 % ===== Question 1 =====
 \section*{Question 1}
-\textbf{Q1.} Find the value of $c$ and $n_0$ such that $f(n)=\sqrt{n}$ is $\Omega(\log n)$.
+\textbf{Q1.} Find the value of $c$ and $n_0$ such that $f(n)=\sqrt{n}$ is $\Omega(\log n)$. \\[1em]
 
 \textbf{Solution. } To show that $f(n) = \sqrt{n}$ is $\Omega(\log n)$, we need to find positive constants $c$ and $n_0$ such that for all $n \ge n_0$, the inequality holds:
 $$0 \le c \cdot \log (n) \le \sqrt{n}$$
@@ -58,13 +58,13 @@ Since both the functions are strictly increasing function in the domain of $n>1$
 Thus, we can choose $c = 1$ and $n_0 = 16$ as the answer. 
 
 \begin{finalanswer}
-Final choice: $c=1$ and $n_0=16$
+Final answer: $c=1$ and $n_0=16$
 \end{finalanswer}
 
 
 % ===== Question 2 =====
 \section*{Question 2}
-\textbf{Q2.} Find the value of $c_1$, $c_2$ and $n_0$ such that $f(n)=10n^2-3n$ is $\Theta(n^2)$
+\textbf{Q2.} Find the value of $c_1$, $c_2$ and $n_0$ such that $f(n)=10n^2-3n$ is $\Theta(n^2)$ \\[1em]
 
 \textbf{Solution. } Show constants $c_1,c_2,n_0$ such that $f(n)=10n^2-3n$ is $\Theta(n^2)$. \\
 
@@ -80,12 +80,12 @@ Lower Bound ($c_1$): For $n \ge 1$, the expression $10 - \frac{3}{n}$ is at its 
 Upper Bound ($c_2$): For any $n>0$, the expression $10 - \frac{3}{n}$ is always less than 10. We can choose $c_2 = 10$. \\
 
 \begin{finalanswer}
-$c_1=7,\ c_2=10,\ n_0=1$, so $10n^2-3n = \Theta(n^2)$.
+Final answer : $c_1=7,\ c_2=10,\ n_0=1$, so $10n^2-3n = \Theta(n^2)$.
 \end{finalanswer}
 
 % ===== Question 3 =====
 \section{Question 3}
-\textbf{Q3.} FProve that $\frac{n^2}{2}-3n=\Theta(n^2)$. 
+\textbf{Q3.} Prove that $\frac{n^2}{2}-3n=\Theta(n^2)$.  \\[1em]
 
 \textbf{Solution. } This is the solution of the abouve questions. 
 \begin{proof}
