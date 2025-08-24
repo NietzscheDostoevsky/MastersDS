@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1755983960.59446 "/home/saurabh-singh/Documents/GitHub/MastersDS/AM608/Assignments/Assignment01/main.tex" "main.pdf" "main" 1755983961.0964 0
+["pdflatex"] 1755984619.37832 "/home/saurabh-singh/Documents/GitHub/MastersDS/AM608/Assignments/Assignment01/main.tex" "main.pdf" "main" 1755984619.96149 0
   "/etc/texmf/web2c/texmf.cnf" 1755880381.04333 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/saurabh-singh/Documents/GitHub/MastersDS/AM608/Assignments/Assignment01/main.tex" 1755983957.69325 3010 95191ffd134e1253ddaf24754b033396 ""
+  "/home/saurabh-singh/Documents/GitHub/MastersDS/AM608/Assignments/Assignment01/main.tex" 1755984619.21487 3077 b3c0db18d11b369b16408bb82ffc933b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1136768653 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -162,9 +162,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1755880393.64452 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1755880438 8217007 3dcc69e72cf60d02a3d34b95fbfc0cb8 ""
-  "main.aux" 1755983961.04333 277 592098c73f4860cac90c7a5bda7c3994 "pdflatex"
-  "main.out" 1755983961.04433 132 fc190d21ea351086514ac60d38b0986d "pdflatex"
-  "main.tex" 1755983957.69325 3010 95191ffd134e1253ddaf24754b033396 ""
+  "diat_logo.png" 1755984443.18894 47172 4519ad7eedad76de576e5d5188cd2b4c ""
+  "main.aux" 1755984619.90789 277 592098c73f4860cac90c7a5bda7c3994 "pdflatex"
+  "main.out" 1755984619.90789 132 fc190d21ea351086514ac60d38b0986d "pdflatex"
+  "main.tex" 1755984619.21487 3077 b3c0db18d11b369b16408bb82ffc933b ""
   (generated)
   "main.aux"
   "main.log"
