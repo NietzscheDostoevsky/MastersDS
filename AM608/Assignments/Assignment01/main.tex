@@ -49,19 +49,16 @@
 \section*{Question 1}
 \textbf{Q1.} Find the value of $c$ and $n_0$ such that $f(n)=\sqrt{n}$ is $\Omega(\log n)$.
 
-\textbf{Solution. } To show that $f(n) = \sqrt{n}$ is $\Omega(\log n)$, we need to find positive constants $c$ and $n_0$ such that for all $n \ge n_0$, the following inequality holds:
-$$0 \le c \cdot \log n \le \sqrt{n}$$
-Let's choose $c = 1$. Now we need to find an $n_0$ such that $\log_2 n \le \sqrt{n}$ for all $n \ge n_0$.
-We can test this inequality. At $n=16$, we have $\log_2 16 = 4$ and $\sqrt{16} = 4$, so the inequality $4 \le 4$ holds.
-It can be shown that for all $n > 16$, the function $\sqrt{n}$ grows faster than $\log_2 n$.
-Thus, we can choose:
-\begin{itemize}
-    \item $c = 1$
-    \item $n_0 = 16$
-\end{itemize}
+\textbf{Solution. } To show that $f(n) = \sqrt{n}$ is $\Omega(\log n)$, we need to find positive constants $c$ and $n_0$ such that for all $n \ge n_0$, the inequality holds:
+$$0 \le c \cdot \log (n) \le \sqrt{n}$$
+I choose $c = 1$ as a convenient constant. \\
+Now we need to find an $n_0$ such that $\log_2 n \le \sqrt{n}$ for all $n \ge n_0$.
+If we chose $n=16$, we have $\log_2 16 = 4$ and $\sqrt{16} = 4$, so the inequality $4 \le 4$ holds.\\
+Since both the functions are strictly increasing function in the domain of $n>1$, if we chose $n=25$, the inequality $1 \cdot 2.3219 < 5$, meaning $n = 4$ is the lowest point where this inequality holds.    
+Thus, we can choose $c = 1$ and $n_0 = 16$ as the answer. 
 
 \begin{finalanswer}
-Final choice: $c=1$ and $n_0=16$ (one convenient choice). Hence $\sqrt{n} \ge \log n$ for all $n\ge 16$.
+Final choice: $c=1$ and $n_0=16$
 \end{finalanswer}
 
 
